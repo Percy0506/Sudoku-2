@@ -147,6 +147,12 @@ public class MySudokuBoard {
             return false;
          }
       }
+      //return false if the map's keys missing any 1-9
+      for(int k = 1; k <= 9; k++) {
+         if(!map.containsKey(k)) {
+            return false;
+         }
+      }
       return true;
    }      
  
